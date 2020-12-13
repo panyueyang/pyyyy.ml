@@ -8,7 +8,7 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
 <script>
   function searches()
   {
-    var c=$.get("pyyyy.ml/dir/"+document.getElementById("exam").value+".txt");
+    var c=$.get("/dir/"+document.getElementById("exam").value+".txt");
   ex.innerHTML=c;
   console.log(c);
   }
