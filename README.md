@@ -8,9 +8,16 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
 <script>
   function searches()
   {
-    var c=$.get("/dir/"+document.getElementById("exam").value+".txt"); console.log(c);
-  ex.innerHTML=c.responseText;
-alert(c.responseText)
+   var httpRequest = new XMLHttpRequest();
+        httpRequest.open('GET',"/dir/"+document.getElementById("exam").value+".txt", true);
+        httpRequest.send();
+        httpRequest.onreadystatechange = function () {
+            if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+                var json = httpRequest.responseText;
+                console.log(json);
+            }
+        };
+ex.innerHTML=json
   }
 </script>
 
