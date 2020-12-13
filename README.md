@@ -8,13 +8,9 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
 <script>
   function searches()
   {
-    var c=$.get("/dir/"+document.getElementById("exam").value+".txt");
-var t=0
-  do
-  t++
-  while(t<2020000)
+    var c=$.get("/dir/"+document.getElementById("exam").value+".txt"); console.log(c);
   ex.innerHTML=eval(c).responseText;
-  console.log(c);
+  if(eval(c).responseText=="undefined")alert(eval(c).responseText)
   }
 </script>
 
