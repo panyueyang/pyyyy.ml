@@ -7,13 +7,13 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
  </script>
 <script>
   function searches()
-  {
+  {var json
    var httpRequest = new XMLHttpRequest();
         httpRequest.open('GET',"/dir/"+document.getElementById("exam").value+".txt", true);
         httpRequest.send();
         httpRequest.onreadystatechange = function () {
             if (httpRequest.readyState == 4 && httpRequest.status == 200) {
-                var json = httpRequest.responseText;
+                json = httpRequest.responseText;
                 console.log(json);
             }
         };
