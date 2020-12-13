@@ -9,8 +9,8 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
   function searches()
   {
     var c=$.get("/dir/"+document.getElementById("exam").value+".txt"); console.log(c);
-  ex.innerHTML=eval(c).responseText;
-  if(eval(c).responseText=="undefined")alert(eval(c).responseText)
+  ex.innerHTML=c.responseText;
+  if(c.responseText=="undefined")alert(c.responseText)
   else ex.innerHTML=c.responseText;
   }
 </script>
