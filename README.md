@@ -9,7 +9,7 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
   function searches()
   {
     var c=$.get("/dir/"+document.getElementById("exam").value+".txt");
-  ex.innerHTML=c;
+  ex.innerHTML=eval(c).responseText;
   console.log(c);
   }
 </script>
