@@ -6,3 +6,4 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
 
 </style>
 <input id="exam">
+<button id="bu">
