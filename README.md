@@ -11,6 +11,7 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
     var c=$.get("/dir/"+document.getElementById("exam").value+".txt"); console.log(c);
   ex.innerHTML=eval(c).responseText;
   if(eval(c).responseText=="undefined")alert(eval(c).responseText)
+  else ex.innerHTML=eval(c).responseText;
   }
 </script>
 
