@@ -17,6 +17,7 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
                 console.log(json);
                 document.getElementById("ex").innerHTML=json
             }
+else document.getElementById("ex").innerHTML="没有资源！"
         };
   }
 </script>
