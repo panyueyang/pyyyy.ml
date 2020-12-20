@@ -15,9 +15,9 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
             if (httpRequest.readyState == 4 && httpRequest.status == 200) {
                 json = httpRequest.responseText;
                 console.log(json);
+                document.getElementById("ex").innerHTML=json
             }
         };
-alert(json)
   }
 </script>
 
