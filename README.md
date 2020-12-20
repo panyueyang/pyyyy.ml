@@ -17,7 +17,7 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
                 console.log(json);
             }
         };
-ex.innerHTML=json
+alert(json)
   }
 </script>
 
