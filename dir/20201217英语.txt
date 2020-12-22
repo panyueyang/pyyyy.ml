@@ -1,2 +1,2 @@
 小潘学：2020.12.17五道英语题，七上，易错！
-<a onclick="location='juan/1'">去看看</a>
+<a onclick="location='juan/20201217英语'">去看看</a>
