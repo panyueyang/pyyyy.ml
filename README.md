@@ -7,29 +7,35 @@ button{                 border: 1px solid #ccc;                 padding: 7px 0px
  </script>
 <script>
   var json
-   var httpRequest = new XMLHttpRequest();
-        httpRequest.open('GET',"list.txt", true);
-        httpRequest.send();
-  httpRequest.onreadystatechange = function () {
-            if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open('GET',"list.txt", true);
+  httpRequest.send();
+  httpRequest.onreadystatechange = function ()
+    {
+            if (httpRequest.readyState == 4 && httpRequest.status == 200)
+            {
                 json = httpRequest.responseText;
                 console.log(json);
                 document.getElementById("a").innerHTML=json
             }
+    }
   function searches()
-  {var json
+  {
+   var json
    var httpRequest = new XMLHttpRequest();
-        httpRequest.open('GET',"/dir/"+document.getElementById("exam").value+".txt", true);
-        httpRequest.send();
-        httpRequest.onreadystatechange = function () {
-            if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+   httpRequest.open('GET',"/dir/"+document.getElementById("exam").value+".txt", true);
+   httpRequest.send();
+   httpRequest.onreadystatechange = function () 
+      {
+       if (httpRequest.readyState == 4 && httpRequest.status == 200) 
+            {
                 json = httpRequest.responseText;
                 console.log(json);
                 document.getElementById("ex").innerHTML=json
             }
-else document.getElementById("ex").innerHTML="没有资源！"
-        };
-  }
+        else document.getElementById("ex").innerHTML="没有资源！"
+      };
+   }
 </script>
 
 <input id="exam">
