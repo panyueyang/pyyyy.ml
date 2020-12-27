@@ -4,4 +4,4 @@ function download()
 	location="juan/2020秋季金华市青少年宫思维训练初一测试题.doc"
 }
 </script>
-<button onclick="download()"></button>
+<button onclick="download()">下载</button>
