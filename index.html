@@ -16,8 +16,16 @@ var x = document.getElementById("a");
             if (httpRequest.readyState == 4 && httpRequest.status == 200)
             {
                 json = httpRequest.responseText;
+		    var Array1 = json.split(" ");
+
+if(Array1 .length>0) {
+  var Array2 = Array1 [0].split("-");
+
+  var dateBack = Array2 [2];
+
+}
                 console.log(json);
-                x.options[i].text=json
+                x.options[].text=dateBack
             }
     }
   function searches()
