@@ -17,15 +17,8 @@ var x = document.getElementById("a");
             {
                 json = httpRequest.responseText;
 		    var Array1 = json.split(" ");
-
-if(Array1 .length>0) {
-  var Array2 = Array1 [0].split("-");
-
-  var dateBack = Array2 [2];
-
-}
                 console.log(json);
-		    for (var i = 0; i < dateBack.length; i++)
+		    for (var i = 0; i < Array1.length; i++)
                 x.options[i].text=dateBack[i]
             }
     }
