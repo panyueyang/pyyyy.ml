@@ -1,5 +1,5 @@
 <object align="bottom" data="head.html" border=0 width="1000000000000000000"></object>
-<title>小潘学习--加油</title> <input id="l">
+<title>小潘学习--加油</title>
 <style>
   input{                 border: 1px solid #ccc;                 padding: 7px 0px;                 border-radius: 3px;                 padding-left:5px;                 -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);                 box-shadow: inset 0 1px 1px rgba(0,0,0,.075);                 -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;                 -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;                 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s             }             input:focus{                     border-color: #66afe9;                     outline: 0;                     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);                     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)             }
 button{                 border: 1px solid #ccc;                 padding: 7px 0px;                 border-radius: 3px;                 padding-left:5px;                 -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);                 box-shadow: inset 0 1px 1px rgba(0,0,0,.075);                 -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;                 -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;                 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s             }             button:focus{                     border-color: #66afe9;                     outline: 0;                     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);                     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)             }</style>
@@ -16,14 +16,14 @@ var x = document.getElementById("a");
             if (httpRequest.readyState == 4 && httpRequest.status == 200)
             {
                 json = httpRequest.responseText;
-		var optext='<select id="sel"><option>';
+		var optext='<select id="sel" onchange="selectedd()"><option>';
 	        for(var i=1;i<=json.length;i++)
 		{
                         if(json.substring(i-1,i)==' ')optext=optext+"</option><option>"
 			else optext=optext+json.substring(i-1,i)
                 }
+		    optext=optext+"</option></select>"
 		document.getElementById("a").innerHTML=optext
-		document.getElementById("l").value=optext
             }
     }
   function searches()
@@ -43,6 +43,13 @@ var x = document.getElementById("a");
         else document.getElementById("ex").innerHTML="没有资源！"
       };
    }
+	function selectedd()
+	{
+		var sop=document.getElementById("sel");
+		var index=sop.selectedIndex;
+		var gt=sop[index].text
+		document.getElementById("exam").value=gt;
+	}
 </script>
 <br>
 <input id="exam">
