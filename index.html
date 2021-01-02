@@ -16,10 +16,13 @@ var x = document.getElementById("a");
             if (httpRequest.readyState == 4 && httpRequest.status == 200)
             {
                 json = httpRequest.responseText;
-		    var Array1 = json.split(" ");
-                console.log(json);
-		    for (var i = 0; i < Array1.length; i++)
-                x.options[i].text=dateBack[i]
+		var optext='<select id="sel"><option>';
+	        for(var i=1;i<=json.length;i++)
+		{
+                        if(json.substring(i-1,i)==' ')optext=optext+"</option><option>"
+			else optext=optext+json.substring(i-1,i)
+                }
+		document.getElementById("a").innerHTML=optext
             }
     }
   function searches()
@@ -45,8 +48,9 @@ var x = document.getElementById("a");
 <button id="bu" onclick="searches()">搜搜题</button>
 
 资源列表
-<select id="a">
-</select>
+<div id="a">
+	
+</div>
  </div>
  <div id="ex">
 	 
