@@ -148,13 +148,17 @@ var x = document.getElementById("a");
 		var gt=sop[index].text
 		document.getElementById("exam").value=gt;
 	}
+	function changewidth()
+		{
+			document.getElementById("exam").style.width=document.getElementById("exam").value.length*30
+		}
 </script>
 	</head>
 <body>
 	<!--顶部页面-->
 <object align="bottom" data="head.html" border=0 width="1000000000000000000"></object>
 <br>
-<!--题目输入区--><input id="exam">
+<!--题目输入区--><input id="exam" onkeydown="changewidth()">
 <!--搜索区--><button id="bu" onclick="searches()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
 
 资源列表
