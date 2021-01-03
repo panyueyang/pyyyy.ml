@@ -1,59 +1,102 @@
-<object align="bottom" data="head.html" border=0 width="1000000000000000000"></object>
-<title>小潘学习--加油</title>
-<style>
-  input{ 
-    background-position:right;    
-    background-repeat:no-repeat;                border: 1px solid #ccc;                 padding: 7px 0px;                 border-radius: 3px;                 padding-left:5px;                 -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);                 box-shadow: inset 0 1px 1px rgba(0,0,0,.075);                 -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;                 -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;                 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s             }             input:focus{                     border-color: #66afe9;                     outline: 0;                     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);                     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)             }
-button{                 border: 1px solid #ccc;                 padding: 7px 0px;                 border-radius: 3px;                 padding-left:5px;                 -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);                 box-shadow: inset 0 1px 1px rgba(0,0,0,.075);                 -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;                 -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;                 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s             }             button:focus{                     border-color: #66afe9;                     outline: 0;                     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);                     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)             }
-.select {
-		display: inline-block;
-		width: 300px;
-		position: relative;
-		vertical-align: middle;
-		padding: 0;
-		overflow: hidden;
-		background-color: #fff;
-		color: #555;
-		border: 1px solid #aaa;
-		text-shadow: none;
-		border-radius: 4px;	
-		transition: box-shadow 0.25s ease;
-		z-index: 2;
-	}
- 
-	.select:hover {
-		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-	}
- 
-	.select:before {
-		content: "";
-		position: absolute;
-		width: 0;
-		height: 0;
-		border: 10px solid transparent;
-		border-top-color: #ccc;
-		top: 14px;
-		right: 10px;
-		cursor: pointer;
-		z-index: -2;
-	}
-	.select select {
-		cursor: pointer;
-		padding: 10px;
-		width: 100%;
-		border: none;
-		background: transparent;
-		background-image: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
- 
-	.select select:focus {
-		outline: none;
-	}</style>
-<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js">
- </script>
-<script>
+<html>
+	<head>
+		<div id="标题">
+			<!--标题-->
+			<title>小潘学习--加油</title>
+		</div>	
+		<div id="格式">
+			<!--style格式-->
+			<style>
+	input{ 
+	    		background-position:right; 
+ 	   		background-repeat:no-repeat;
+  	  		border: 1px solid #ccc;
+ 	  		padding: 7px 0px;
+			border-radius: 3px;
+			padding-left:5px;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+			-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+		}             
+	input:focus{
+			border-color: #66afe9;
+			outline: 0;
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+		}
+	button{
+			border: 1px solid #ccc;                
+			padding: 7px 0px;             
+			border-radius: 3px;         
+			padding-left:5px;        
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);     
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);            
+			-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;        
+			-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;          
+			transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s        
+		}          
+	button:focus{               
+			border-color: #66afe9;        
+			outline: 0;              
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);       
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)           
+		}
+	select {
+			display: inline-block;
+			width: 300px;
+			position: relative;
+			vertical-align: middle;
+			padding: 0;
+			overflow: hidden;
+			background-color: #fff;
+			color: #555;
+			border: 1px solid #aaa;
+			text-shadow: none;
+			border-radius: 4px;	
+			transition: box-shadow 0.25s ease;
+			z-index: 2;
+		}	
+ 	
+	select:hover {
+			box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+		}
+	 
+	select:before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border: 10px solid transparent;
+			border-top-color: #ccc;
+			top: 14px;
+			right: 10px;
+			cursor: pointer;
+			z-index: -2;
+		}
+	select 	select {
+			cursor: pointer;
+			padding: 10px;
+			width: 100%;
+			border: none;
+			background: transparent;
+			background-image: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+		}
+	select select:focus {
+			outline: none;
+		}
+	button#bu{
+			 background: url("https://panyueyang-zhaoshenghao.github.io/tu/r.png") no-repeat;
+		}
+			</style>
+		</div>
+		<!--jquery-->
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!--脚本script-->
+	<script>
   var json
   var httpRequest = new XMLHttpRequest();
   httpRequest.open('GET',"list.txt", true);
@@ -99,16 +142,18 @@ var x = document.getElementById("a");
 		document.getElementById("exam").value=gt;
 	}
 </script>
+	</head>
+<body>
+	<!--顶部页面-->
+<object align="bottom" data="head.html" border=0 width="1000000000000000000"></object>
 <br>
-<input id="exam">
-<button id="bu" onclick="searches()"><img src="https://panyueyang-zhaoshenghao.github.io/tu/r.png" alt=""></img></button>
+<!--题目输入区--><input id="exam">
+<!--搜索区--><button id="bu" onclick="searches()"></button>
 
 资源列表
-<div id="a">
+<!--资源列表区--><div id="a">
 	
 </div>
- </div>
- <div id="ex">
-	 
- </p>
- </h1>
+ 
+ <!--题目结果区--><div id="ex">
+</div>
