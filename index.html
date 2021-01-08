@@ -163,6 +163,7 @@ var x = document.getElementById("a");
 		{
                         if(isChinese(document.getElementById("exam").value.substring(i-1,i)))a+=30
 			else if(document.getElementById("exam").value.substring(i-1,i)==" ")a+=10
+			else if(document.getElementById("exam").value.substring(i-1,i)==".")a+=10
 			else a+=18
                 }
 			document.getElementById("exam").style.width=a
