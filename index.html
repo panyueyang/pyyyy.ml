@@ -127,16 +127,6 @@ var x = document.getElementById("a");
 		document.getElementById("a").innerHTML=optext
             }
     }
-function searchn()
-{
-var a,b,ans
-a=math.floor(math.random()*9+1);
-b=math.floor(math.random()*9+1);
-ans=a+b
-var y=prompt("验证码："+a+"+"+b+"=")
-if(ans==y)searches()
-else alert("失败")
-}
   function searches()
   {
    var json
@@ -154,6 +144,16 @@ else alert("失败")
         else document.getElementById("ex").innerHTML="没有资源！"
       };
    }
+function searchn()
+{
+var a,b,ans
+a=math.floor(math.random()*9+1);
+b=math.floor(math.random()*9+1);
+ans=a+b
+var y;y=prompt("验证码："+a+"+"+b+"=")
+if(ans==y)searches()
+else alert("失败")
+}
 	function selectedd()
 	{
 		var sop=document.getElementById("sel");
