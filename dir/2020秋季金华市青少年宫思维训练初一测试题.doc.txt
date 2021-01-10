@@ -1,1 +1,3 @@
-<button onclick="location='juan/2020秋季金华市青少年宫思维训练初一测试题.doc'">下载</button>
+<script>
+	location="//juan/2020秋季金华市青少年宫思维训练初一测试题.html"
+</script>
