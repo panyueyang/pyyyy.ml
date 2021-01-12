@@ -140,6 +140,7 @@ var x = document.getElementById("a");
                 json = httpRequest.responseText;
                 console.log(json);
                 document.getElementById("ex").innerHTML=json
+		    autorun_()
             }
         else document.getElementById("ex").innerHTML="没有资源！"
       };
