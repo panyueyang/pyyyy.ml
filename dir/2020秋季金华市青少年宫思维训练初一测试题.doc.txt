@@ -1,1 +1,1 @@
-<button onclick="function autorun_(){location='//juan/2020秋季金华市青少年宫思维训练初一测试题/'}">2020秋季金华市青少年宫思维训练初一测试题主题页面
+<button onclick="location='//juan/2020秋季金华市青少年宫思维训练初一测试题/'">2020秋季金华市青少年宫思维训练初一测试题主题页面
